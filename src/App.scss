@@ -1,0 +1,68 @@
+$color: #9fc5ff;
+$selectColor: #fff8ea;
+$borderRadius: 5px;
+$border: 2px solid;
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    .content-container {
+      border: $border $color;
+      border-radius: $borderRadius;
+      min-width: 600px;
+
+      .converter-side {
+        margin: 30px;
+
+        .converter-side__title {
+          font-size: 22px;
+          margin-bottom: 15px;
+        }
+
+        .converter-side__directions-group {
+          display: flex;
+          margin-bottom: 10px;
+
+          .direction-group__item,
+          .direction-group__item_selected {
+            padding: 5px 10px;
+            cursor: pointer;
+            line-height: 14px;
+          }
+          
+          .direction-group__item_selected {
+            background-color: $color;
+            border: $border $color;
+            border-radius: $borderRadius;
+          }
+        }
+
+        .converter-side__input {
+          height: 30px;
+          border-radius: $borderRadius;
+          width: 250px;
+          margin-right: 5px;
+        }
+        
+        .converter-side__input:focus {
+          outline-color: $color;
+        }
+        
+        select {
+          background-color: $selectColor;
+          border: $border;
+          border-radius: $borderRadius;
+          height: 34px;
+          margin-left: 2px;
+          cursor: pointer;
+          min-width: 200px;
+        }
+        
+        select:focus-visible {
+          outline: 0;
+        }
+      }
+    }
+}
