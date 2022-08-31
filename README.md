@@ -1,8 +1,9 @@
 # NodeJS v16.14.2
 
-### `npm start`
+### First of all install dependencies with `npm install`
 
-Runs the app in the development mode.\
+### Then run `npm start`
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### `npm test`
